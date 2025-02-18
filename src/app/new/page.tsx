@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 
 async function createToDo(data: FormData) {
-  "use server"
+  'use server'
 
   const title = data.get("title")?.valueOf();
   if (typeof title !== "string" || title.length === 0) {
